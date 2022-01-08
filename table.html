@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container">
+    <br>
+    <h1 style="text-align: center; font-style: italic; font-family: Arial, Helvetica, sans-serif;">Personal Expenses Tracker</h1>
+    <div class="card">
+        <div class="card-body" style="background-color: lightgray; font-family: Arial, Helvetica, sans-serif;">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group" style="background-color: lightgreen;">
+                        <label for="item-purchased">Item Purchased</label>
+                        <input type="text" class="form-control" id="item-purchased">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group" style="background-color: lightgreen;">
+                        <label for="amount-spent">Amount Spent</label>
+                        <input type="number" class="form-control" id="amount-spent">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="date-purchased">Date Purchased</label>
+                        <input type="date" class="form-control" id="date-purchased">
+                    </div>
+                </div>
+                <!-- <div class="col-sm">
+                    <div class="form-group">
+                        <label for="monthly-subscription">Is this a Monthly Subscription?</label>
+                        <input type="checkbox" class="form-control" id="monthly-subscription" value="Yes">
+                    </div>
+                </div> -->
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped" style="background-color: ivory; font-family: Arial, Helvetica, sans-serif; font-size: small;">
+        <tr>
+            <th>Item Purchased | </th>
+            <th>Amount Spent   | </th>
+           <!-- <th>Monthly Subscription | </th> -->
+            <th>Date Purchased | </th>
+            <th>Actions    </th>
+        </tr>
+    </table>
+
+    <script src="table.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
